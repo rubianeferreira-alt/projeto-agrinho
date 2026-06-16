@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroForte</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+
+    body {
+        background: #e0e0e0;
+        color: #1e2b1e;
+    }
+
+    /* HERO */
+    .hero {
+        height: 80vh;
+        background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('https://images.unsplash.com/photo-1592982537447-6f2a6b0b7c4d?auto=format&fit=crop&w=1600&q=80');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .hero a {
+        margin-top: 25px;
+        padding: 12px 22px;
+        background: #2e7d32;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .hero a:hover {
+        background: #1b5e20;
+    }
+
+    /* NAV */
+    nav {
+        background: #1b5e20;
+        padding: 15px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* SEÇÕES */
+    section {
+        padding: 60px 10%;
+    }
+
+    h2 {
+        color: #2e7d32;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    /* CARDS */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+    }
+
+    /* STATS */
+    .stats {
+        background: #e8f5e9;
+        padding: 30px;
+        border-radius: 12px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        text-align: center;
+        gap: 20px;
+    }
+
+    .stat h3 {
+        font-size: 28px;
+        color: #1b5e20;
+    }
+
+    /* TABLE */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    th {
+        background: #2e7d32;
+        color: white;
+        padding: 12px;
+    }
+
+    td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* CONTACT */
+    .contact {
+        background: #1b5e20;
+        color: white;
+        text-align: center;
+        padding: 40px;
+        border-radius: 12px;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #0f2410;
+        color: white;
+        margin-top: 40px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>🌱 AgroForte</h1>
+    <p>Inovação e tecnologia transformando o agronegócio</p>
+    <a href="#sobre">Explorar</a>
+</div>
+
+<!-- MENU -->
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#culturas">Culturas</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#dados">Dados</a>
+</nav>
+
+<!-- SOBRE -->
+<section id="sobre">
+    <h2>Sobre o Agronegócio</h2>
+    <p>
+        O agronegócio brasileiro é um dos mais importantes do mundo,
+        responsável por alimentar milhões de pessoas e movimentar a economia global.
+    </p>
+</section>
+
+<!-- STATS -->
+<section>
+    <h2>📊 Números do Agro</h2>
+    <div class="stats">
+        <div class="stat">
+            <h3>+300M</h3>
+            <p>Toneladas produzidas</p>
+        </div>
+        <div class="stat">
+            <h3>+120</h3>
+            <p>Países exportados</p>
+        </div>
+        <div class="stat">
+            <h3>+5M</h3>
+            <p>Produtores rurais</p>
+        </div>
+    </div>
+</section>
+
+<!-- CULTURAS -->
+<section id="culturas">
+    <h2>🌾 Culturas Principais</h2>
+
+    <div class="grid">
+        <div class="card"><h3>Soja</h3><p>Principal exportação do Brasil.</p></div>
+        <div class="card"><h3>Milho</h3><p>Base da alimentação animal.</p></div>
+        <div class="card"><h3>Café</h3><p>Brasil líder mundial.</p></div>
+        <div class="card"><h3>Cana</h3><p>Energia e açúcar.</p></div>
+    </div>
+</section>
+
+<!-- TECNOLOGIA -->
+<section id="tecnologia">
+    <h2>🚜 Tecnologia no Campo</h2>
+
+    <div class="grid">
+        <div class="card">Drones agrícolas</div>
+        <div class="card">IA no plantio</div>
+        <div class="card">Tratores inteligentes</div>
+        <div class="card">Sensores de solo</div>
+    </div>
+</section>
+
+<!-- DADOS -->
+<section id="dados">
+    <h2>📈 Produção</h2>
+
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>Produção</th>
+            <th>Exportação</th>
+        </tr>
+        <tr>
+            <td>Soja</td>
+            <td>Alta</td>
+            <td>Muito Alta</td>
+        </tr>
+        <tr>
+            <td>Milho</td>
+            <td>Alta</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>Café</td>
+            <td>Alta</td>
+            <td>Muito Alta</td>
+        </tr>
+    </table>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 AgroForte</p>
+    <p>Rubiane Ferreira ✍️</p>
+</footer>
+
+</body>
+</html>
